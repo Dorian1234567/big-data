@@ -11,10 +11,10 @@ Ce projet implémente un pipeline de filtrage collaboratif distribué utilisant 
 │   └── relationships/data.txt      # Fichier des relations utilisateur
 ├── deploy/                         # Fichiers nécessaires pour construire l'image Docker
 │   ├── Dockerfile                  # Dockerfile pour configurer Hadoop et HDFS
-│   ├── core-site.xml               # Configuration HDFS
+│   ├── core-site.xml               # Configure HDFS
 │   ├── entrypoint.sh               # Script de démarrage du conteneur
 │   └── ...                         # Autres fichiers de configuration
-├── jars/                           # Dossier où sont copiés les JARs générés
+├── jars/                           # Dossiers où sont copiés les JARs générés
 │   ├── tpfinal-mourchid_moutuidine_job1.jar
 │   ├── tpfinal-mourchid_moutuidine_job2.jar
 │   └── tpfinal-mourchid_moutuidine_job3.jar
@@ -135,13 +135,13 @@ Exécutez les trois jobs Hadoop en séquence :
 
 ```bash
 # Job 1
-hadoop jar /jars/tpfinal-mourchid_moutuidine_job1.jar /data/relationships/data.txt /data/output/job1
+hadoop jar /jars/tpfinal-gaping_dorian_job1.jar /data/relationships/data.txt /data/output/job1
 
 # Job 2
-hadoop jar /jars/tpfinal-mourchid_moutuidine_job2.jar /data/output/job1 /data/output/job2
+hadoop jar /jars/tpfinal-gaping_dorian_job2.jar /data/output/job1 /data/output/job2
 
 # Job 3
-hadoop jar /jars/tpfinal-mourchid_moutuidine_job3.jar /data/output/job2 /data/output/job3
+hadoop jar /jars/tpfinal-gaping_dorian_job3.jar /data/output/job2 /data/output/job3
 ```
 
 ### 4. Télécharger les Résultats Finaux
