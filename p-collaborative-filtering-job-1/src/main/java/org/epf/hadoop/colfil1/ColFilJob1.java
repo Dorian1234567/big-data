@@ -15,7 +15,7 @@ public class ColFilJob1 {
         }
 
         Configuration conf = new Configuration();
-        Job job = Job.getInstance(conf, "Job 1: Friend List");
+        Job job = Job.getInstance(conf, "Job 1: Liste d´amis");
 
         job.setJarByClass(ColFilJob1.class);
 

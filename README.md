@@ -1,4 +1,4 @@
-# MOUTUIDINE Mourchid 
+# Dorian GAPING SIMEN
 # Hadoop TP3 - Collaborative Filtering
 
 Ce projet implémente un pipeline de filtrage collaboratif distribué utilisant Hadoop. Il inclut trois jobs MapReduce qui prennent en entrée un fichier de relations utilisateur et produisent des recommandations basées sur des relations communes.
@@ -8,7 +8,7 @@ Ce projet implémente un pipeline de filtrage collaboratif distribué utilisant 
 ```
 .
 ├── data/                           # Dossier contenant les données d'entrée
-│   └── relationships/data.txt      # Fichier de relations utilisateur
+│   └── relationships/data.txt      # Fichier des relations utilisateur
 ├── deploy/                         # Fichiers nécessaires pour construire l'image Docker
 │   ├── Dockerfile                  # Dockerfile pour configurer Hadoop et HDFS
 │   ├── core-site.xml               # Configuration HDFS
